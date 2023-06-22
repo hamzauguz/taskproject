@@ -1,0 +1,13 @@
+.headerTitlewithIcon {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  align-content: center;
+  display: flex;
+}
+
+.headerTitlewithIcon:hover {
+  color: rgb(185, 155, 155) !important;
+  cursor: pointer;
+}
