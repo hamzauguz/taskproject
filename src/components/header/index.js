@@ -36,6 +36,15 @@ const Header = () => {
         </div>
         <div className="rightPlace">
           <HeaderTitlewithIcon
+            icon={
+              <AiOutlineSearch
+                style={{ marginRight: 25, cursor: "pointer" }}
+                size={26}
+              />
+            }
+          />
+
+          <HeaderTitlewithIcon
             firstIcon={<AiOutlineGlobal size={22} style={{ marginRight: 5 }} />}
             title={"USA"}
             icon={<AiOutlineDown style={{ marginLeft: 5 }} size={22} />}
