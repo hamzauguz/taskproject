@@ -1,0 +1,121 @@
+@media only screen and (max-width: 768px) {
+  .footerDivContainer {
+    flex-direction: column !important;
+    text-align: start;
+    height: auto !important;
+  }
+
+  .gridFooterPages {
+    grid-template-columns: repeat(1, auto) !important;
+  }
+
+  .leftFooterPlace {
+    align-items: flex-start;
+    align-content: flex-start;
+    display: block !important;
+    margin-bottom: 30em !important;
+    margin-left: 1em !important;
+  }
+
+  .footerContainer {
+    flex-direction: column !important;
+    padding-left: 0px !important;
+  }
+  .footerImageRight {
+    height: 500px !important;
+    margin-left: 0 !important;
+    object-fit: fill;
+    margin-bottom: -20.5em;
+    position: fixed;
+    display: block !important;
+  }
+
+  .footerPageItem {
+    line-height: 1.3em !important;
+    width: auto !important;
+    font-size: 14px !important;
+  }
+  .lastFooterTitle {
+    margin-top: 1em !important;
+  }
+
+  .footerSignTitle {
+    display: none;
+  }
+}
+
+.footerContainer {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 520px;
+  padding-left: 80px;
+  position: fixed;
+  bottom: 0;
+  flex-direction: row;
+  display: flex;
+}
+
+.footerTitle {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: -0.8px;
+  color: white;
+}
+
+.gridFooterPages {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* Her satırda 2 sütun olacak */
+  width: 628px;
+  height: 204px;
+  margin-top: 2em;
+}
+
+.footerImageRight {
+  height: 400px;
+  bottom: 0;
+  margin-left: 15em;
+}
+
+.footerInside {
+  justify-content: space-between;
+  display: flex;
+  height: 520px;
+  width: 100%;
+}
+
+.footerPageItem {
+  width: 200px;
+  margin-top: 1em;
+}
+
+.footerPageItem:hover {
+  color: rgb(185, 155, 155) !important;
+  cursor: pointer;
+}
+
+.lastFooterTitle {
+  margin-top: -1.5em;
+}
+
+.leftFooterPlace {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerSignTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.07px;
+  margin-top: 2em;
+  display: none;
+}
+
+.footerDivContainer {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+}
