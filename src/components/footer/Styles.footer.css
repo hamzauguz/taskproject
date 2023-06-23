@@ -22,12 +22,12 @@
     padding-left: 0px !important;
   }
   .footerImageRight {
-    height: auto !important;
+    height: 500px !important;
     margin-left: 0 !important;
-    object-fit: cover;
-    margin-bottom: -17.5em;
-    width: 100% !important;
+    object-fit: fill;
+    margin-bottom: -20.5em;
     position: fixed;
+    display: block !important;
   }
 
   .footerPageItem {
