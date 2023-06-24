@@ -136,6 +136,11 @@ const Home = () => {
           ))}
         </Carousel>
       </div>
+
+      {/* 360 Value Title */}
+      <div className="thirdTitleContainer">
+        <span className="title360Style">360 VALUE</span>
+      </div>
     </div>
   );
 };
