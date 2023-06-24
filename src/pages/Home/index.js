@@ -5,13 +5,15 @@ const Home = () => {
   return (
     <div className="HomeContainer">
       <div className="homeTitlePlace">
-        <span className="homeFirstTitle firstLeftTitle">
-          REINVENT WHAT YOUR
-        </span>
-        <span className="homeFirstTitle firstRightTitle">
-          BUSINESS COULD BE
-        </span>
-        <span className="titleLets">Let there be change</span>
+        <div className="firstLeftTitle">
+          <span className="homeFirstTitle responsiveLeft">REINVENT&nbsp;</span>
+          <span className="homeFirstTitle responsiveRight">WHAT YOUR</span>
+        </div>
+        <div className="firstRightTitle">
+          <span className="homeFirstTitle responsiveLeft">BUSINESS&nbsp;</span>
+          <span className="homeFirstTitle responsiveSecondRight">COULD BE</span>
+        </div>
+        <span className="titleLets ">Let there be change</span>
       </div>
     </div>
   );

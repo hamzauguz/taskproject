@@ -9,7 +9,8 @@ const App = () => {
     <div className="App">
       <Header />
       <Home />
-      <Footer />
+      <div className="spaceApp" />
+      {/* <Footer /> */}
     </div>
   );
 };

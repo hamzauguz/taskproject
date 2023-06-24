@@ -12,8 +12,8 @@
   .leftFooterPlace {
     align-items: flex-start;
     align-content: flex-start;
-    display: block !important;
-    margin-bottom: 30em !important;
+    margin-top: -30em !important;
+    padding-bottom: 30em !important;
     margin-left: 1em !important;
   }
 
