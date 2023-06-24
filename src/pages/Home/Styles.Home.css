@@ -83,3 +83,33 @@
   font-weight: 600;
   margin-top: 1em;
 }
+
+.firstCardPlace {
+  justify-content: center;
+}
+
+.cardFourCarousel {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.leftArrow {
+  bottom: 0;
+  position: absolute;
+  margin-left: 2em;
+}
+.rightArrow {
+  margin-left: 5em;
+  bottom: 0;
+  position: absolute;
+}
+
+.carouselContainer {
+  padding-bottom: 2.5em;
+}
+
+.carouselFirsItemImg {
+  margin-top: 5em !important;
+  display: flex;
+  margin: 0 auto;
+}
