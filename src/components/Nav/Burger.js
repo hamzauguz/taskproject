@@ -11,6 +11,7 @@ const StyledBurger = styled.div`
   left: 20px;
   z-index: 20;
   display: none;
+  background-color: transparent;
 
   @media (max-width: 768px) {
     display: flex;
@@ -19,7 +20,7 @@ const StyledBurger = styled.div`
   }
 
   div {
-    width: 2rem;
+    width: 1.5rem;
     height: 0.25rem;
     background-color: ${({ open }) => (open ? "rgb(185, 155, 155) " : "#fff")};
     border-radius: 10px;
@@ -33,7 +34,7 @@ const StyledBurger = styled.div`
     &:nth-child(2) {
       transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
       opacity: ${({ open }) => (open ? 0 : 1)};
-      width: 1.5rem;
+      width: 2rem;
     }
 
     &:nth-child(3) {

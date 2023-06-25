@@ -7,17 +7,24 @@ import {
 } from "react-icons/hi";
 import CarouselDot from "../../components/carousel-dot";
 import NewsApi from "../../api/newsapi.json";
+import AccentureNews from "../../api/accenturenewsapi.json";
 import CarouselNewCard from "../../components/carousel-new-card";
 import ColorCard1 from "../../assets/ColourfulCard/colorcard1.png";
 import ColorCard2 from "../../assets/ColourfulCard/colorcard2.png";
 import ColorCard3 from "../../assets/ColourfulCard/colorcard3.png";
 import BusinessPersonelImage from "../../assets/businesswomen.png";
+import AccentureCard from "../../components/accenture-card";
 
 const Home = () => {
   const [newsData, setNewsData] = useState([]);
+  const [accentureNews, setAccentureNews] = useState([]);
 
   useEffect(() => {
     setNewsData(NewsApi);
+  }, []);
+
+  useEffect(() => {
+    setAccentureNews(AccentureNews);
   }, []);
   console.log("newsData: ", newsData);
 
@@ -228,6 +235,34 @@ const Home = () => {
           className="businessPersonelImageStyle"
           src={BusinessPersonelImage}
         />
+      </div>
+      <div className="accenturenewsContainer">
+        <span className="accenturenewsMainTitle">Accenture news</span>
+        <div>
+          <Carousel
+            showDots
+            loop
+            autoplay={4000}
+            dot={CarouselDot}
+            cols={1}
+            rows={1}
+            containerClassName={"carouselContainer"}
+            dotColorActive={"fff"}
+          >
+            {accentureNews.map((data, index) => (
+              <Carousel.Item key={index}>
+                {/* <<div className="accenturenewsPlace">
+                  <span className="accentureDateTitle">{data.date}</span>
+                  <span className="accentureDescTitle">{data.description}</span>
+                </div>> */}
+                <AccentureCard
+                  date={data.date}
+                  description={data.description}
+                />
+              </Carousel.Item>
+            ))}
+          </Carousel>
+        </div>
       </div>
     </div>
   );
