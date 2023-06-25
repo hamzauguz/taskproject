@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "https://cdn.mos.cms.futurecdn.net/xcLR5HMU2kxskdAy3ZVuTf.jpg",
+    "title": "Space data, decoded",
+    "description": "The sky is full of satellites…but how to harness the data? e- GEOS’ solution is an AI-powered product that makes geoinformation data accessible through a simple user interface."
+  },
+  {
+    "id": 2,
+    "image": "https://i20.haber7.net/resize/1300x788//haber/haber7/photos/2020/07/venus_nedir_venus_gezegenin_ozellikleri_nelerdir_venus_hakkinda_hic_bilinmeyen_gercekler_1581597001_0517.jpg",
+    "title": "Venus, decoded",
+    "description": "Venus is the second planet from the Sun in our solar system and is named after the Roman goddess of love and beauty. It is often referred to as Earth's corching temperatures. "
+  },
+  {
+    "id": 3,
+    "image": "https://www.gelgez.net/wp-content/uploads/2020/11/venus-gezegeni-gelgez-700x420.jpg",
+    "title": "Old Earth",
+    "description": "Additionally, Venus has a slow retrograde rotation, meaning it rotates on its axis in the opposite direction to most other planets. A day on Venus is longer than its year, with one "
+  }
+]

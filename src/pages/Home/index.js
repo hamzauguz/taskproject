@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Styles.Home.css";
 import Carousel from "react-grid-carousel";
 import {
@@ -6,8 +6,17 @@ import {
   HiOutlineArrowNarrowLeft,
 } from "react-icons/hi";
 import CarouselDot from "../../components/carousel-dot";
+import NewsApi from "../../api/newsapi.json";
+import CarouselNewCard from "../../components/carousel-new-card";
 
 const Home = () => {
+  const [newsData, setNewsData] = useState([]);
+
+  useEffect(() => {
+    setNewsData(NewsApi);
+  }, []);
+  console.log("newsData: ", newsData);
+
   const images = [
     {
       src: "../../assets/FirstCard/rad-card-1.png",
@@ -103,6 +112,8 @@ const Home = () => {
       <div className="firstCardPlace">
         <Carousel
           showDots
+          loop
+          autoplay={5000}
           dot={CarouselDot}
           cols={4}
           rows={2}
@@ -111,12 +122,12 @@ const Home = () => {
           dotColorActive={"fff"}
           arrowRight={() => (
             <span className="rightArrow">
-              <HiOutlineArrowNarrowRight size={25} />
+              <HiOutlineArrowNarrowRight cursor={"pointer"} size={25} />
             </span>
           )}
           arrowLeft={() => (
             <span className="leftArrow">
-              <HiOutlineArrowNarrowLeft size={25} />
+              <HiOutlineArrowNarrowLeft cursor={"pointer"} size={25} />
             </span>
           )}
         >
@@ -140,6 +151,40 @@ const Home = () => {
       {/* 360 Value Title */}
       <div className="thirdTitleContainer">
         <span className="title360Style">360 VALUE</span>
+      </div>
+
+      {/* Haber yerinin yapılması */}
+      <div className="newsContainer">
+        <Carousel
+          showDots
+          loop
+          autoplay={4000}
+          dot={CarouselDot}
+          cols={1}
+          rows={1}
+          containerClassName={"carouselContainer"}
+          dotColorActive={"fff"}
+          arrowRight={() => (
+            <span className="rightArrow">
+              <HiOutlineArrowNarrowRight cursor={"pointer"} size={25} />
+            </span>
+          )}
+          arrowLeft={() => (
+            <span className="leftArrow">
+              <HiOutlineArrowNarrowLeft cursor={"pointer"} size={25} />
+            </span>
+          )}
+        >
+          {newsData.map((data, index) => (
+            <Carousel.Item key={index}>
+              <CarouselNewCard
+                image={data.image}
+                title={data.title}
+                description={data.description}
+              />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
     </div>
   );
