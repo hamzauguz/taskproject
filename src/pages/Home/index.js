@@ -8,6 +8,9 @@ import {
 import CarouselDot from "../../components/carousel-dot";
 import NewsApi from "../../api/newsapi.json";
 import CarouselNewCard from "../../components/carousel-new-card";
+import ColorCard1 from "../../assets/ColourfulCard/colorcard1.png";
+import ColorCard2 from "../../assets/ColourfulCard/colorcard2.png";
+import ColorCard3 from "../../assets/ColourfulCard/colorcard3.png";
 
 const Home = () => {
   const [newsData, setNewsData] = useState([]);
@@ -16,6 +19,21 @@ const Home = () => {
     setNewsData(NewsApi);
   }, []);
   console.log("newsData: ", newsData);
+
+  const colourfulImages = [
+    {
+      image: ColorCard1,
+      description: "We’re one of Fortune’s World’s Most Admired Companies",
+    },
+    {
+      image: ColorCard2,
+      description: "Among Ethisphere’s World’s Most Ethical Companies",
+    },
+    {
+      image: ColorCard3,
+      description: "Fortune & Great Place to Work® World’s Best Workplaces™",
+    },
+  ];
 
   const images = [
     {
@@ -185,6 +203,19 @@ const Home = () => {
             </Carousel.Item>
           ))}
         </Carousel>
+      </div>
+
+      {/* Renkli card yerinin yapılması */}
+      <div className="colourfulCardContainer">
+        {colourfulImages.map((imgItem, key) => (
+          <div className={`colourfulCardItem cardPlace-${key}`}>
+            <img
+              className={`imageColorStyle cardColor-${key}`}
+              src={imgItem.image}
+            />
+            <span className="colorTitleCard">{imgItem.description}</span>
+          </div>
+        ))}
       </div>
     </div>
   );

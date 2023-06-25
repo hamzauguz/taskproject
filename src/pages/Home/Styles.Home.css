@@ -48,6 +48,37 @@
     align-items: center;
     justify-content: center;
   }
+  .colourfulCardItem {
+    margin-top: 5em;
+    width: 100% !important;
+    align-content: center !important;
+    align-items: center !important;
+    align-self: center !important;
+  }
+  .colorTitleCard {
+    margin-top: -5em !important;
+    margin-left: 1em;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 24px !important;
+    width: 60% !important;
+  }
+
+  .cardPlace-0 {
+  }
+  .cardPlace-1 {
+    margin-left: 7em;
+  }
+
+  .cardPlace-2 {
+  }
+  .imageColorStyle {
+    width: 252px;
+    height: 378px;
+  }
+  /* .colourfulCardContainer {
+    width: auto !important;
+  } */
 }
 
 .HomeContainer {
@@ -141,4 +172,54 @@
 
 .newsContainer {
   margin-top: 10em;
+}
+
+.colourfulCardContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.colourfulCardItem {
+  opacity: 0.9;
+  width: 515px;
+  height: 342px;
+  margin-top: 5em;
+}
+
+.cardPlace-0 {
+  align-self: flex-start;
+}
+.cardPlace-1 {
+  align-self: flex-end;
+}
+
+.cardPlace-2 {
+  align-self: center;
+}
+
+.cardColor-0 {
+  background-color: #460073;
+}
+.cardColor-1 {
+  background-color: #0041f0;
+}
+
+.cardColor-2 {
+  background-color: #e2062e;
+}
+
+.colorTitleCard {
+  z-index: 9999;
+  position: absolute;
+  align-items: center;
+  display: flex;
+  margin-top: -4em;
+  margin-left: 1em;
+  font-weight: 400;
+  font-size: 29px;
+  line-height: 40px;
+  width: 26%;
+  background-color: transparent;
 }
