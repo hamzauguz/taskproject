@@ -207,6 +207,9 @@ const Home = () => {
 
       {/* Renkli card yerinin yapılması */}
       <div className="colourfulCardContainer">
+        <span className="colourfulMainTitle">
+          Global recognition and awards
+        </span>
         {colourfulImages.map((imgItem, key) => (
           <div className={`colourfulCardItem cardPlace-${key}`}>
             <img
