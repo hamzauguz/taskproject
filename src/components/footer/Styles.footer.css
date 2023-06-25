@@ -12,22 +12,23 @@
   .leftFooterPlace {
     align-items: flex-start;
     align-content: flex-start;
-    display: block !important;
-    margin-bottom: 30em !important;
+    margin-top: -27em !important;
+    padding-bottom: 30em !important;
     margin-left: 1em !important;
   }
 
   .footerContainer {
     flex-direction: column !important;
-    padding-left: 0px !important;
+    padding-left: 0 !important;
+    width: 100% !important;
   }
   .footerImageRight {
     height: 500px !important;
     margin-left: 0 !important;
     object-fit: fill;
     margin-bottom: -20.5em;
-    position: fixed;
     display: block !important;
+    width: 100% !important;
   }
 
   .footerPageItem {
@@ -42,6 +43,13 @@
   .footerSignTitle {
     display: none;
   }
+  .footerTitle {
+    font-size: 20px !important;
+    font-weight: 400;
+    line-height: 28px !important;
+    letter-spacing: -0.5px !important;
+    color: white;
+  }
 }
 
 .footerContainer {
@@ -49,7 +57,6 @@
   font-family: Arial, Helvetica, sans-serif;
   height: 520px;
   padding-left: 80px;
-  position: fixed;
   bottom: 0;
   flex-direction: row;
   display: flex;
@@ -66,7 +73,6 @@
 .gridFooterPages {
   display: grid;
   grid-template-columns: repeat(2, auto); /* Her satırda 2 sütun olacak */
-  width: 628px;
   height: 204px;
   margin-top: 2em;
 }
@@ -116,6 +122,5 @@
 .footerDivContainer {
   display: flex;
   flex-direction: row;
-  position: fixed;
   bottom: 0;
 }
