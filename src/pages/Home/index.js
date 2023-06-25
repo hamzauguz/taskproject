@@ -11,6 +11,7 @@ import CarouselNewCard from "../../components/carousel-new-card";
 import ColorCard1 from "../../assets/ColourfulCard/colorcard1.png";
 import ColorCard2 from "../../assets/ColourfulCard/colorcard2.png";
 import ColorCard3 from "../../assets/ColourfulCard/colorcard3.png";
+import BusinessPersonelImage from "../../assets/businesswomen.png";
 
 const Home = () => {
   const [newsData, setNewsData] = useState([]);
@@ -219,6 +220,14 @@ const Home = () => {
             <span className="colorTitleCard">{imgItem.description}</span>
           </div>
         ))}
+      </div>
+
+      {/* Business personel yeri */}
+      <div className="businessPersonelContainer">
+        <img
+          className="businessPersonelImageStyle"
+          src={BusinessPersonelImage}
+        />
       </div>
     </div>
   );
